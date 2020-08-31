@@ -47,9 +47,10 @@ df=pd.read_csv('shopping.csv') #load the list of shopping items from the file
 
 #go through the list line by line and open a tab
 for i,row in df.iterrows():
-	if pd.isnull(row['url']):
-		getitem(row['item'])
-	else:
-		getitem(row['url'])
+	if not (row['skip']==1):
+		if pd.isnull(row['url']):
+			getitem(row['item'])
+		else:
+			getitem(row['url'])
 
 
