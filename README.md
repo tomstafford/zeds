@@ -1,6 +1,10 @@
 python3 script for finding/loading zed's pages. Speeds up your weekly shop
 
-looks in the file shopping.csv for items and either searches for them or, if there is a url, loads that page
+looks in the file `shopping.csv` for items and either searches for them or, if there is a url, loads that page
+
+run at the command line
+
+    python zeds.py
 
 you can then click "add to basket"
 
